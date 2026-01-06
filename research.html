@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Research - Akram Ullah Khan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      body { padding-top: 80px; background: #f8f9fa; }
+      .navbar { background: rgba(0,0,0,0.9) !important; padding: 15px 0; position: fixed; width: 100%; z-index: 1000; top: 0; }
+      .navbar-brand { font-size: 1.5rem; font-weight: 700; }
+      .nav-link { font-size: 1rem; padding: 10px 20px !important; color: rgba(255,255,255,0.8) !important; }
+      .nav-link:hover { color: white !important; }
+
+      .page-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 80px 0 60px;
+        color: white;
+        text-align: center;
+      }
+
+      .page-header h1 { font-size: 3rem; font-weight: 700; margin-bottom: 15px; }
+      .page-header p { font-size: 1.2rem; opacity: 0.95; }
+
+      .content-section { padding: 60px 0; }
+
+      .section-title {
+        margin-bottom: 50px;
+        text-align: center;
+      }
+
+      .section-title h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 15px;
+      }
+
+      .section-title p {
+        font-size: 1.1rem;
+        color: #666;
+      }
+
+      .project-card {
+        background: white;
+        padding: 35px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        border-left: 5px solid #667eea;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      }
+
+      .project-card .date {
+        color: #667eea;
+        font-weight: 700;
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+        display: block;
+      }
+
+      .project-card h3 {
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 12px;
+        font-weight: 600;
+      }
+
+      .project-card .label {
+        background: #f0f2ff;
+        color: #667eea;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 15px;
+      }
+
+      .project-card p {
+        color: #666;
+        font-size: 1.05rem;
+        line-height: 1.7;
+      }
+
+      .expertise-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-bottom: 60px;
+      }
+
+      .expertise-card {
+        background: white;
+        padding: 35px;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+
+      .expertise-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      }
+
+      .expertise-card .icon {
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 50%;
+        margin: 0 auto 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        color: white;
+      }
+
+      .expertise-card h3 {
+        font-size: 1.4rem;
+        color: #333;
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+
+      .expertise-card p {
+        color: #666;
+        line-height: 1.6;
+        font-size: 1rem;
+      }
+
+      .fieldwork-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+      }
+
+      .fieldwork-card {
+        background: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        border-left: 4px solid #764ba2;
+      }
+
+      .fieldwork-card .year {
+        color: #764ba2;
+        font-weight: 700;
+        font-size: 1rem;
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      .fieldwork-card h4 {
+        font-size: 1.2rem;
+        color: #333;
+        margin-bottom: 8px;
+        font-weight: 600;
+      }
+
+      .fieldwork-card .location {
+        color: #666;
+        font-size: 0.95rem;
+      }
+
+      .skills-section {
+        background: white;
+        padding: 60px 0;
+      }
+
+      .skill-item {
+        margin-bottom: 30px;
+      }
+
+      .skill-item h4 {
+        font-size: 1.1rem;
+        color: #333;
+        margin-bottom: 10px;
+        font-weight: 600;
+      }
+
+      .skill-bar {
+        background: #e9ecef;
+        height: 12px;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .skill-progress {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        height: 100%;
+        border-radius: 10px;
+        transition: width 1s ease;
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Akram Ullah Khan</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link"><span>Home</span></a></li>
+            <li class="nav-item"><a href="publications.html" class="nav-link"><span>Publications</span></a></li>
+            <li class="nav-item"><a href="research.html" class="nav-link"><span>Research</span></a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link"><span>Contact</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="page-header">
+      <div class="container">
+        <h1>Research & Expertise</h1>
+        <p>Comprehensive overview of research projects, field work, and technical skills</p>
+      </div>
+    </div>
+
+    <!-- Research Areas -->
+    <section class="content-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Research Expertise</h2>
+          <p>Specialized areas of investigation and technical competencies</p>
+        </div>
+
+        <div class="expertise-grid">
+          <div class="expertise-card">
+            <div class="icon">🗻</div>
+            <h3>Structural Geology</h3>
+            <p>Investigating tectonic evolution of the Pakistani Himalaya and Neo-Tethys Ocean through integrated field studies, structural analysis, and geochemical characterization.</p>
+          </div>
+
+          <div class="expertise-card">
+            <div class="icon">⏰</div>
+            <h3>Geochronology</h3>
+            <p>Expertise in LA-ICP-MS zircon U-Pb dating, trace element analysis, and Sr-Nd-Hf isotope geochemistry for understanding magma sources and crustal evolution.</p>
+          </div>
+
+          <div class="expertise-card">
+            <div class="icon">🌋</div>
+            <h3>Ophiolite Geology</h3>
+            <p>Specialized research on Muslim Bagh-Khanozai and Zhob ophiolites, constraining crust-mantle interactions and oceanic lithosphere formation.</p>
+          </div>
+
+          <div class="expertise-card">
+            <div class="icon">🔬</div>
+            <h3>Geochemistry</h3>
+            <p>Whole-rock major and trace element geochemistry, isotopic analysis, and petrogenetic modeling for tectonic discrimination and source characterization.</p>
+          </div>
+
+          <div class="expertise-card">
+            <div class="icon">🪨</div>
+            <h3>Petrography</h3>
+            <p>Detailed petrographic analysis of igneous, metamorphic, and sedimentary rocks to understand petrogenesis, deformation history, and metamorphic evolution.</p>
+          </div>
+
+          <div class="expertise-card">
+            <div class="icon">🛢️</div>
+            <h3>Reservoir Geology</h3>
+            <p>Experience in reservoir characterization, lacustrine turbidite systems, and petroleum geology from studies in the Ordos Basin.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Projects -->
+    <section class="content-section" style="background: white;">
+      <div class="container">
+        <div class="section-title">
+          <h2>Research Projects</h2>
+          <p>Current and completed research investigations</p>
+        </div>
+
+        <div class="project-card">
+          <span class="date">2019 - 2025</span>
+          <span class="label">PhD Research</span>
+          <h3>Tectonic Evolution of Pakistani Himalaya and other Orogenic Belts</h3>
+          <p>
+            Comprehensive investigation of the tectonic evolution of the Pakistani Himalaya and associated orogenic belts through multi-disciplinary approaches. The research integrates extensive field studies, high-precision geochronology (LA-ICP-MS U-Pb dating), whole-rock and isotopic geochemistry (Sr-Nd-Hf), and structural analysis to constrain the formation, evolution, and emplacement of ophiolitic complexes in western Pakistan. Key focus areas include the Muslim Bagh-Khanozai, Zhob, and Naweoba ophiolites, providing crucial insights into Neo-Tethyan oceanic crust formation, subduction processes, and continental collision dynamics.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Field Campaigns -->
+    <section class="content-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Field Campaigns</h2>
+          <p>Geological field work across diverse terrains</p>
+        </div>
+
+        <div class="fieldwork-grid">
+          <div class="fieldwork-card">
+            <span class="year">2025</span>
+            <h4>Geology Summer School</h4>
+            <p class="location">Qinghai-Tibetan Plateau, China</p>
+          </div>
+
+          <div class="fieldwork-card">
+            <span class="year">2020</span>
+            <h4>Southwestern Himalaya</h4>
+            <p class="location">Muslim Bagh-Khanozai-Zhob, Pakistan</p>
+          </div>
+
+          <div class="fieldwork-card">
+            <span class="year">2017</span>
+            <h4>Upper Triassic Yanchang Formation</h4>
+            <p class="location">Ordos Basin, China</p>
+          </div>
+
+          <div class="fieldwork-card">
+            <span class="year">2016</span>
+            <h4>Kirana Hills Survey</h4>
+            <p class="location">Sharban Area, Pakistan</p>
+          </div>
+
+          <div class="fieldwork-card">
+            <span class="year">2015</span>
+            <h4>Central Salt Range</h4>
+            <p class="location">Pakistan</p>
+          </div>
+
+          <div class="fieldwork-card">
+            <span class="year">2015</span>
+            <h4>Western Salt Range</h4>
+            <p class="location">Namal Gorge, Pakistan</p>
+          </div>
+
+          <div class="fieldwork-card">
+            <span class="year">2014</span>
+            <h4>Hazara-Kashmir Syntaxis</h4>
+            <p class="location">Pakistan</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="skills-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Technical Skills</h2>
+          <p>Laboratory techniques, analytical methods, and software proficiency</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="skill-item">
+              <h4>LA-ICP-MS (U-Pb Dating & Trace Elements)</h4>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <h4>Glitter (Data Processing)</h4>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 95%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <h4>IGpet (Geochemical Modeling)</h4>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 95%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <h4>GCDkit (Geochemical Data Toolkit)</h4>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <h4>GPlates (Plate Reconstruction)</h4>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="skill-item">
+              <h4>Isoplot (Geochronology)</h4>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <h4>ArcGIS (GIS Mapping)</h4>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 70%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <h4>CorelDraw (Graphics)</h4>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <h4>MS Office Suite</h4>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <h4>Field Geology & Structural Mapping</h4>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 95%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="ftco-footer ftco-section" style="padding: 40px 0; background: #1a1a1a; margin-top: 60px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p style="color: rgba(255,255,255,0.6); margin: 0;">
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> Akram Ullah Khan. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
